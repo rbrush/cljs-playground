@@ -9,6 +9,7 @@
                  [om "0.7.1"]
                  [prismatic/om-tools "0.3.2"]
                  [secretary "1.2.0"]
+                 [reagent "0.4.2"]
                  [prismatic/schema "0.2.4"]]
 
   :source-paths ["src/main/clojure"]

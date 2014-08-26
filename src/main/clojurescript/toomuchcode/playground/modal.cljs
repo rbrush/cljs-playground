@@ -43,7 +43,7 @@
                    (->person-details-modal data))))
 
 ;; Declare the route for our modal experiments.
-(defroute "/modal" {:as params}
+(defroute "/om/modal" {:as params}
 
   (om/root playground playground-state
          {:target (.getElementById js/document "app")}))

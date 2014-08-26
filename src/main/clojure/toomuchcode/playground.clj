@@ -14,7 +14,11 @@
    [:link {:href  "css/bootstrap.min.css" :rel "stylesheet" :type "text/css"}]
    [:title "ClojureScript Playground"]
    [:body
-    [:div {:id "app"}]
+    [:div {:id "app"}
+     [:ul
+      [:li [:a {:href "#/om/modal"} "Om Modal"]]
+      [:li [:a {:href "#/om/multimodal"} "Om Multiroot Modal"]]
+      [:li [:a {:href "#/reagent/modal"} "Reagent Modal"]]]]
     [:div {:id "details-modal"}]
     [:div
      [:script {:src "http://fb.me/react-0.11.1.js"}]

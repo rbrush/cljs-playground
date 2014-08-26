@@ -73,7 +73,7 @@
 
 
 ;; Declare the route for our modal experiments.
-(defroute "/multimodal" {:as params}
+(defroute "/om/multimodal" {:as params}
 
   (om/root playground playground-state
            {:target (.getElementById js/document "app")})
