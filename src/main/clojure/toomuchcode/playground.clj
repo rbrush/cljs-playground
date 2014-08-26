@@ -13,12 +13,14 @@
   [:head
    [:link {:href  "css/bootstrap.min.css" :rel "stylesheet" :type "text/css"}]
    [:title "ClojureScript Playground"]
-   [:body [:div {:id "app"}]
-     [:div
-      [:script {:src "http://fb.me/react-0.11.1.js"}]
-      [:script {:src "/js/react-bootstrap.min.js"}]
-      [:script {:src "/js/playground.js"}]
-      [:script (browser-connected-repl-js)]]]])
+   [:body
+    [:div {:id "app"}]
+    [:div {:id "details-modal"}]
+    [:div
+     [:script {:src "http://fb.me/react-0.11.1.js"}]
+     [:script {:src "/js/react-bootstrap.min.js"}]
+     [:script {:src "/js/playground.js"}]
+     [:script (browser-connected-repl-js)]]]])
 
 (defroutes routes
   (route/resources "/")
