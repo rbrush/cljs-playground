@@ -14,12 +14,23 @@
    [:link {:href  "css/bootstrap.min.css" :rel "stylesheet" :type "text/css"}]
    [:title "ClojureScript Playground"]
    [:body
-    [:div {:id "app"}
-     [:ul
-      [:li [:a {:href "#/om/modal"} "Om Modal"]]
-      [:li [:a {:href "#/om/multimodal"} "Om Multiroot Modal"]]
-      [:li [:a {:href "#/reagent/modal"} "Reagent Modal"]]]]
     [:div {:id "details-modal"}]
+    [:div {:class "container-fluid"}
+     [:div {class "row"} [:h1 "Clojurescript Playground Hacks"]]
+     [:div {:class "row"}
+      [:div {:class "col-lg-2"}
+
+       [:div {:class "panel panel-default"}
+        [:div {:class "panel-heading"} "Experiments:"]
+        [:ul {:class "list-group"}
+         [:li {:class "list-group-item"} [:a {:href "#/om/modal"} "Om Modal"]]
+         [:li {:class "list-group-item"} [:a {:href "#/om/multimodal"} "Om Multiroot Modal"]]
+         [:li {:class "list-group-item"} [:a {:href "#/om/removelist"} "Items that can be removed"]]
+         [:li {:class "list-group-item"} [:a {:href "#/reagent/modal"} "Reagent Modal"]]]]]
+
+      [:div {:class  "col-lg-10 col-md-10 col-sm-10" }
+       [:div {:id "app"}]]]]
+
     [:div
      [:script {:src "http://fb.me/react-0.11.1.js"}]
      [:script {:src "/js/react-bootstrap.min.js"}]

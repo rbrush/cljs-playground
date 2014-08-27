@@ -1,4 +1,4 @@
-(ns toomuchcode.playground.modal-multiroot
+(ns toomuchcode.playground.om.modal-multiroot
   "Experiment using a separate root for the modal.."
   (:require [om.core :as om]
             [om-tools.core :refer-macros [defcomponent]]

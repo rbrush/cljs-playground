@@ -2,9 +2,10 @@
   "Main entrypoint to the playground."
   (:require [goog.events :as events]
             [secretary.core :as secretary :include-macros true :refer [defroute]]
-            [toomuchcode.playground.modal :as modal]
-            [toomuchcode.playground.modal-multiroot :as modal-multi]
-            [toomuchcode.playground.reagent.modal])
+            [toomuchcode.playground.om.modal]
+            [toomuchcode.playground.om.modal-multiroot]
+            [toomuchcode.playground.reagent.modal]
+            [toomuchcode.playground.om.removelist])
   (:import goog.History
            goog.history.EventType))
 

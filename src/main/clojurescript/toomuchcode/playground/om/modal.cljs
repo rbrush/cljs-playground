@@ -1,4 +1,4 @@
-(ns toomuchcode.playground.modal
+(ns toomuchcode.playground.om.modal
   "Playground for modals."
   (:require [om.core :as om]
             [om-tools.core :refer-macros [defcomponent]]
